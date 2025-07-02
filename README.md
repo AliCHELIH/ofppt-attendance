@@ -43,7 +43,7 @@ php artisan key:generate
 php artisan migrate --seed
 php artisan serve
 ```
-###3. Frontend React
+### 3. Frontend React
 ```
 cd ../frontend
 npm install
