@@ -31,3 +31,20 @@ Application complète de gestion de présence pour les établissements de format
 ```bash
 git clone https://github.com/AliCHELIH/ofppt-attendance.git
 cd ofppt-attendance
+```
+### 2. Backend Laravel (API)
+```
+cd backend
+composer install
+cp .env.example .env
+php artisan key:generate
+
+# Configurer .env avec vos infos MySQL
+php artisan migrate --seed
+php artisan serve
+```
+###3. Frontend React
+```
+cd ../frontend
+npm install
+npm run dev
